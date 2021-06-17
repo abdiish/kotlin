@@ -5,7 +5,9 @@ fun main(){
     persona.darBienvenida()
 }
 
-class Persona(val nombre: String, val apellido: String){
+// Se coloca private, para que el nombre y apellido sean accedidos unicamente por la clase Persona
+
+class Persona(private val nombre: String, private val apellido: String){
     
     //Se crea un metodo en Kotlin
     fun darBienvenida(){
